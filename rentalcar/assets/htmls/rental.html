@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is a Search and Rent page for Dodgy Brakes Car Rental.">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../styles/rental.css">
+        <title>Dodgy Brakes: Search and Rent Car</title>
+    </head>
+    <body onload="showDateTime(); loadClients();">
+        <header>
+            <h1>Dodgy Brakes: Search and Rent Car</h1>
+            <img src="../images/logo.jpg" alt="Dodgy Brakes Car Rental Logo">
+        </header>
+        <main>
+            <div id="search_div">
+                <label for="search_field" class="box">Enter Client's Last Name:</label>
+                <input id="search_field" class="box" type="text" value="" oninput="findClients(this.value);">
+            </div>
+            <div id="search_results"></div>
+            <form id="rental_form" onsubmit="displayInvoice(); return false;">
+                <h2>Client Details</h2>
+                <div id="client_details">
+                    <label for="lastname" class="box">Last Name:</label>
+                    <input id="lastname" class="box" type="text" name="firstname" value="" readonly><br><br>
+                    <label for="firstname" class="box">First Name:</label>
+                    <input id="firstname" class="box" type="text" name="lastname" value="" readonly><br><br>
+                    <label for="address" class="box">Address:</label>
+                    <input id="address" class="box" type="text" name="address" value="" readonly><br><br>
+                    <label for="state" class="box">State:</label>
+                    <input id="state" class="box" type="text" name="state" value="" readonly><br><br>
+                    <label for="email" class="box">Email:</label>
+                    <input id="email" class="box" type="email" name="email" value="" readonly><br><br>
+                    <label for="phone" class="box">Phone Number:</label>
+                    <input id="phone" class="box" type="tel" name="phone" value="" readonly><br>
+                </div>
+                <br>
+                <h2>Rental Choices and options</h2>
+                <div id="additional_form">
+                    <h3>Vehicle Choices</h3>
+                    <div id="vehicle_div">
+                        <div class="vehicles">
+                            <div class="radio_div">
+                                <input id="compact" type="radio" name="vehicle[]" value="Compact" required>
+                            </div>
+                            <label for="compact">
+                                Compact &emsp; &nbsp; ($15/day)<br>
+                                <img src="../images/compact.jpg" alt="compact">
+                            </label>
+                        </div>
+                        <div class="vehicles">
+                            <div class="radio_div">
+                                <input id="midsize" type="radio" name="vehicle[]" value="Mid-size" required>
+                            </div>
+                            <label for="midsize">
+                                Mid-size &emsp; &ensp; ($20/day)<br>
+                                <img src="../images/midsize.jpg" alt="midsize">
+                            </label>
+                        </div>
+                        <div class="vehicles">
+                            <div class="radio_div">
+                                <input id="luxury" type="radio" name="vehicle[]" value="Luxury" required>
+                            </div>
+                            <label for="luxury">
+                                Luxury &emsp; &emsp; ($35/day)<br>
+                                <img src="../images/luxury.jpg" alt="luxury">
+                            </label>
+                        </div>
+                        <div class="vehicles">
+                            <div class="radio_div">
+                                <input id="van_truck" type="radio" name="vehicle[]" value="Van/Truck ($40/day)" required>
+                            </div>
+                            <label for="van_truck">
+                                Van/Truck &nbsp; &nbsp; ($40/day)<br>
+                                <img src="../images/van_truck.jpg" alt="van_truck">
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Additional Options</h3>
+                    <div id="options_div">
+                        <input id="rack" type="checkbox" name="options[]" value="Roof Rack or Bicycle Rack (Extra $5/day)">
+                        <label for="rack">&emsp;Roof Rack or Bicycle Rack (Extra $5/day)</label><br><br>
+                        <input id="gps" type="checkbox" name="options[]" value="GPS (Extra $10)">
+                        <label for="gps">&emsp;GPS &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; (Extra $10)</label><br><br>
+                        <input id="seat" type="checkbox" name="options[]" value="Child Seat (Free)">
+                        <label for="seat">&emsp;Child Seat  &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &nbsp; (Free)</label><br>
+                    </div>
+                    <div id="days_div">
+                        <label for="days" class="box">Number of Days (1 to 30):</label>
+                        <input id="days" class="box" type="number" name="days" min="1" max="30" value="1" onchange="rangeCheck();" required>
+                    </div>
+                </div>
+                <div id="button_div">
+                    <input id="submit" type="submit" >
+                </div>
+            </form>
+        </main>
+        <div id="invoice"></div>
+        <footer id="footer">
+            <div id="date"></div>
+            <p>Back to <a href="../../index.html">Home Page</a></p>
+        </footer>
+        <script type="text/javascript" src="../scripts/rental.js"></script>
+    </body>
+</html>

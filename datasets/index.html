@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is a web application for Calgary city operations data and location search.">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="assets/styles/datasets_style.css">
+        <title>Calgary City Operations Data</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calgary City Operations Data</h1>
+        </header>
+        <main>
+            <h2>Select a Dataset:</h2><br>
+            <div id="button_div">
+                <button id="building_permits_button" class="buttons" type="button" onclick="ajaxFunction(this.id);">Building Permits</button>
+                <button id="crime_stats_button" class="buttons" type="button" onclick="ajaxFunction(this.id);">Crime Stats</button>
+                <button id="traffic_cameras_button" class="buttons" type="button" onclick="ajaxFunction(this.id);">Traffic Cameras</button>
+                <button id="traffic_incidents_button" class="buttons" type="button" onclick="ajaxFunction(this.id);">Traffic Incidents</button>
+            </div>
+            <div id="description_div">
+                <p>Building permit applications made to The City of Calgary's Planning & Development department.</p><hr>
+                <p>Data is provided monthly by the Calgary Police Service. This includes both crime and disorder statistics.</p><hr>
+                <p>View up-to-the-minute traffic camera images of current road conditions on major routes as well as other key intersections.</p><hr>
+                <p>An archive of traffic incidents within Calgary updated every 10 minutes.</p>
+            </div>
+            <div id="html_forms"></div>
+        </main>
+        <script type="text/javascript" src="assets/scripts/datasets_script.js"></script>
+        <script type="text/javascript" src="assets/scripts/building_permits.js"></script>
+        <script type="text/javascript" src="assets/scripts/crime_stats.js"></script>
+        <script type="text/javascript" src="assets/scripts/traffic_cameras.js"></script>
+        <script type="text/javascript" src="assets/scripts/traffic_incidents.js"></script>
+    </body>
+</html>

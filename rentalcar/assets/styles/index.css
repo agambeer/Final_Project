@@ -1,0 +1,64 @@
+body {
+    background-image: url("../images/rental_cars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+header h1 {
+    display: inline-block;
+    font-family: 'Zilla Slab', serif;
+    color: royalblue;
+}
+header img {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    width: 60px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+main h2 {
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+}
+main h2 a {
+    background-color: lightyellow;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: red;
+    text-decoration: none;
+}
+main h2 a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: white;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 0;
+    border-top: 2px solid black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+footer div {
+    font-weight: bold;
+}
+footer div span {
+    color: royalblue;
+}

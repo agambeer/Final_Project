@@ -1,0 +1,133 @@
+body {
+    background-color: lightyellow;
+    font-family: 'Hahmlet', serif;
+    color: darkslategray;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: darkred;
+    margin: 0;
+}
+header h1 {
+    color: gold;
+    font-size: 2.5em;
+    padding: 10px;
+    margin: 0;
+}
+
+main {
+    padding: 20px 0 40px;
+}
+main h2 {
+    font-size: 2em;
+    padding: 10px;
+    margin: 0;
+}
+main #button_div {
+    display: inline-block;
+}
+main #description_div {
+    display: inline-block;
+    text-align: left;
+}
+main button {
+    display: block;
+    width: 250px;
+    height: 45px;
+    margin: 0 auto 20px;
+    background-color: darkslategray;
+    color: honeydew;
+    font-family: 'Georama', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+main p {
+    font-family: 'Georama', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+main hr {
+    color: black;
+}
+main #label_input {
+    width: 700px;
+    margin: 0 30%;
+    padding: 20px 0 10px;
+}
+main #label_input label {
+    display: inline-block;
+    width: 300px;
+    padding-bottom: 25px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+main #label_input input, #label_input select {
+    font-family: 'Georama', sans-serif;
+    display: inline-block;
+    width: 300px;
+    color: darkred;
+    background-color: linen;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 14px;
+}
+main #label_input select {
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-left: 10px;
+}
+
+.selected {
+    background-color: darkred;
+    color: gold;
+}
+
+#search_results {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    color: darkred;
+    font-family: 'Georama', sans-serif;
+}
+#search_results h2 {
+    font-size: 1.75em;
+    color: darkslategray;
+    font-family: 'Hahmlet', serif;
+}
+#search_results table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: auto;
+    margin: 0 auto;
+}
+#search_results table td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+#search_results table tr {
+    background-color: linen;
+}
+#search_results table #headings {
+    background-color: darkred;
+    color: gold;
+    font-family: 'Hahmlet', serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+

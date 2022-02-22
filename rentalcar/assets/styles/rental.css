@@ -1,0 +1,232 @@
+body {
+    background-image: url("../images/rental_cars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+header h1 {
+    display: inline-block;
+    font-family: 'Zilla Slab', serif;
+    color: royalblue;
+}
+header img {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    width: 60px;
+}
+
+main {
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+main h2 {
+    color: royalblue;
+    font-family: 'Zilla Slab', serif;
+}
+main h3 {
+    color: royalblue;
+    font-family: 'Zilla Slab', serif;
+    font-size: x-large;
+}
+
+main label.box {
+    display: inline-block;
+    width: 250px;
+    padding-right: 5px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+main input.box {
+    display: inline-block;
+    width: 250px;
+    height: 25px;
+    border: 2px black solid;
+    border-radius: 4px;
+    background-color: lightyellow;
+    padding: 3px 8px;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: red;
+}
+
+main #search_div {
+    padding: 40px 0;
+}
+
+main #search_results {
+    padding-bottom: 20px;
+    text-align: center;
+    color: red;
+}
+main #search_results p {
+    text-align: left;
+    padding-left: 40%;
+    font-family: 'Saira', sans-serif;
+}
+main #search_results p:hover {
+    text-decoration: underline;
+}
+main #search_results #none {
+    font-family: 'Saira', sans-serif;
+}
+
+main form #additional_form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main form #additional_form #vehicle_div {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+main form #additional_form #vehicle_div .vehicles {
+    height: 165px;
+    padding-bottom: 15px;
+}
+main form #additional_form #vehicle_div .vehicles .radio_div {
+    display: inline-block;
+    margin-top: -1px;
+    vertical-align: middle;
+    height: 100%;
+}
+main form #additional_form #vehicle_div .vehicles input {
+    color: red;
+}
+main form #additional_form #vehicle_div .vehicles label {
+    display: inline-block;
+    padding: 10px 0 10px 20px;
+    width: 200px;
+    height: 100%;
+}
+main form #additional_form #vehicle_div .vehicles label img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+main form #additional_form #options_div {
+    text-align: left;
+    padding-left: 30%;
+    padding-bottom: 40px;
+}
+
+main form #button_div {
+    padding: 40px;
+}
+main form #button_div #submit {
+    border: 2px black solid;
+    border-radius: 4px;
+    font-family: 'Saira', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: green;
+    background-color: lightyellow;
+    padding: 5px 25px;
+}
+main form #button_div #submit:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+#invoice {
+    width: 60%;
+    margin: 20px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Saira', sans-serif;
+}
+#invoice h1 {
+    font-family: 'Zilla Slab', serif;
+    color: royalblue;
+    text-align: center;
+}
+#invoice h2 {
+    font-family: 'Zilla Slab', serif;
+    color: royalblue;
+    margin-left: 150px;
+}
+#invoice #about {
+    margin-left: 150px;
+    line-height: 1.8;
+    padding-bottom: 10px;
+}
+#invoice #order {
+    width: 550px;
+    margin: 0 150px 0;
+    line-height: 1.8;
+}
+#invoice #order_items {
+    display: inline-block;
+    width: 350px;
+}
+#invoice #order_items b {
+    color: red;
+}
+#invoice #order_prices {
+    display: inline-block;
+    width: 200px;
+}
+#invoice span.order_total {
+    font-size: larger;
+    color: green;
+}
+
+.footer_relative {
+    position: relative;
+}
+.footer_absolute {
+    position: absolute;
+}
+footer {
+    background-color: white;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 2px solid black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+footer div {
+    font-weight: bold;
+    padding: 10px;
+}
+footer div span {
+    color: royalblue;
+}
+footer p {
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 0;
+}
+footer p a {
+    color: red;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+}

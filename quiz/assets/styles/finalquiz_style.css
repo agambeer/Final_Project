@@ -1,0 +1,94 @@
+body {
+    background-color: floralwhite;
+    margin: 0;
+}
+
+header {
+    background-color: palegreen;
+    text-align: center;
+    margin: 0;
+}
+header h1 {
+    color: darkgreen;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    padding: 15px;
+    margin: 0;
+}
+
+main {
+    font-family: 'Roboto Slab', serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 40px;
+}
+main h4 {
+    text-align: center;
+    font-size: 1.25em;
+    padding: 10px;
+    margin: 0;
+}
+
+main form #quiz {
+    font-size: large;
+}
+main form #quiz p.question {
+    color: darkslategray;
+}
+main form #quiz div.options {
+    color: darkslateblue;
+}
+
+main form #buttons_div {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+main form #buttons_div input {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    border: 2px darkslateblue solid;
+    border-radius: 4px;
+    padding: 4px 15px;
+}
+main form #buttons_div #grade_quiz {
+    background-color: darkgreen;
+    color: greenyellow;
+    margin-right: 100px;
+}
+main form #buttons_div #reset_quiz {
+    background-color: darkred;
+    color: gold;
+    margin-left: 100px;
+}
+main form #buttons_div #grade_quiz:hover {
+    color: yellow;
+}
+main form #buttons_div #reset_quiz:hover {
+    color: wheat;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+main #grade {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    color: darkslategray;
+    background-color: palegreen;
+    border-radius: 4px;
+    padding: 10px;
+    width: 25%;
+    margin: 20px auto;
+}
+main #grade span {
+    font-weight: 800;
+    color: darkslateblue;
+}

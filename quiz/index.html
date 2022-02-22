@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is a web application for Final Quiz.">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="assets/styles/finalquiz_style.css">
+        <title>Final Quiz</title>
+    </head>
+    <body onload="loadXML(); hideGrade();">
+        <header>
+            <h1 id="heading">Final Quiz</h1>
+        </header>
+        <main>
+            <h4>Note: All questions are compulsory. Each question has only one correct answer.</h4>
+            <form onsubmit="displayGrade(); return false;" onreset="hideGrade();">
+                <div id="quiz"></div>
+                <div id="buttons_div">
+                    <input id="grade_quiz" type="submit" value="Grade Quiz">
+                    <input id="reset_quiz" type="reset" value="Reset Quiz">
+                </div>
+            </form>
+            <br>
+            <div id="grade"></div>
+        </main>
+        <script type="text/javascript" src="assets/scripts/finalquiz_script.js"></script>
+    </body>
+</html>
